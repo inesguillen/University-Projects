@@ -1,0 +1,471 @@
+/*PAGINA 1*/
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #A91D3A;
+    height: auto;
+    top: 0;
+}
+
+.topNavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.button {
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    height: auto;
+    /* Allow height to adjust based on content */
+    font-weight: bold;
+    background-color: #9fc2ea;
+}
+
+button:hover {
+    color: #151515;
+    background-color: #C73659;
+}
+
+.logo{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: #151515;
+}
+
+.text1{
+    font-size: 60px;
+    font-weight: 800;
+    color: #A91D3A;
+	text-align: center;
+	line-height: 100px;
+}
+
+.text2{
+    font-size: 100px;
+    font-weight: 400;
+    color: #EEEEEE;
+	vertical-align: baseline;
+	-webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #C73659;
+}
+
+.btn0, .btn1{
+    padding: 10px 5px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.btn0 {
+    background-color: white;
+    color: black;
+}
+  
+.btn1 {
+    background-color: black;
+    color: white;
+}
+  
+.btn2{
+    background-color: #A91D3A;
+    color: #EEEEEE;
+    width: 300px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+	vertical-align: baseline;
+}
+
+/*--------------------------------------------*/
+/*PAGINA 2*/
+.column {
+    flex: 1 1 45%;
+    margin: 10px;
+    text-align: center;
+}
+  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    flex: 1 0 100%;
+}
+
+.column p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.fotoNoel {
+    width: 220px;
+}
+
+img {
+    width: 100%;
+}
+
+/*--------------------------------------------*/
+/*PAGINA 3*/
+.caja{
+    display: flex;
+    flex-wrap: wrap;
+	flex-direction: row;
+    justify-content: left;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.carta{
+    display: flex;
+    border-radius: 10px;
+    margin: 2vh;
+    padding: 5vh;
+    width: calc(33.33% - 20vh);
+    height: auto;
+    border: 1px solid #404547;
+    background-color: #C73659;
+    font-size: medium;
+}
+
+.carta-cuerpo {
+    display: flex;
+    align-items: center;
+	flex-direction : row
+}
+
+.contenido{
+    text-align: left;
+}
+
+.carta-header{
+    font-weight: bold;
+    font-size: 3vh;
+    text-align: left;
+}
+
+.carta-cuerpo img {
+    border-radius: 50%;
+    width: 15vh;
+    height: 15vh;
+    object-fit: cover;
+    margin-right: 2vh;
+}
+
+.contenido h3{
+    font-weight: bold;
+    font-size: 5vh;
+    color: #EEEEEE;
+}
+
+.contenido p{
+    font-size: 1rem;
+    color: #EEEEEE;
+}
+
+/*--------------------------------------------*/
+/*PAGINA 4*/
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    margin: 10px;
+    margin-top: 100px;
+}
+
+form section{
+    font-size: large;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button{
+    background-color: #A91D3A;
+    color: #EEEEEE;
+    height: auto;
+    width: 30vh;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+
+form label{
+	color : #C73659;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #EEEEEE;
+	color: #A91D3A
+}
+
+/*--------------------------------------------*/
+/*PAGINA 5*/
+/*
+.menu {
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.menu a {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    color: #EEEEEE;
+}
+
+.menu a:hover {
+    color: #4e1ad2;
+}
+*/
+
+.slider-wrapper{
+    display: grid;
+    flex: 33% 66%;
+    text-align: center;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.slider-nav {
+    grid-column: 1;
+    position: flex;
+    align-items: left;
+}
+
+.slider-nav a{
+    width: .2rem;
+    height: auto;
+    color: white;
+    font-weight: bold;
+    transition: opacity ease 250ms;
+}
+
+.slider{
+    grid-column: 2;
+    margin: 10px;
+    text-align: left;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    box-shadow: 0 .25rem .5rem #151515;
+    overflow-x: scroll;
+    border-radius: .5rem;
+}
+
+/*--------------------------------------------*/
+/*PAGINA 6*/
+.column1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.column1 a{
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+
+.colLogo {
+    width: 100%;
+    display: grid;
+    column-gap: 40px;
+    column-width: 20px;
+    grid-template-columns: auto auto auto auto 50%;
+    align-items: center;
+}
+
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+#homepage {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-photo/santa-claus-stars-pattern-background_123827-27526.jpg?t=st=1727814671~exp=1727818271~hmac=0fc653f7f5a7990817a073e2e524bc93a3f8512a5ab44a03af300147bbfd989f&w=996');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#PapaNoel,
+#cartas,
+#enviacarta,
+#Juega {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #151515;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  margin-top: 1vh;
+}
+
+#enlaces {
+  height: fit-content;
+  background-color: #A91D3A;
+  box-sizing: border-box;
+  margin-top:0;
+}
+
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    .btn2 {
+      width: 100%;
+      max-width: 300px;
+      padding: 12px;
+      font-size: 18px;
+    }
+}
+
+@media (max-width: 800px) {
+    .carta {
+      width: 90%;
+      grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    /*TABLETS*/
+    .column{width: 8.33%;}
+}
+
+@media only screen and (min-width: 768px){
+    /*DESKPOT*/
+    .column{width: 8.33%;}
+}
+
+@media (max-width: 600px) {
+    .colLogo {
+      column-gap: 10px;
+    }
+
+    .caja {
+        flex-direction: column;
+    }
+
+    .contenido h3 {
+        font-weight: bold;
+        font-size: 1.5vh;
+        color: #EEEEEE;
+    }
+
+    .column1 a {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn2 {
+      max-width: 100%;
+      padding: 15px;
+      font-size: 14px;
+    }
+  
+    .text1 {
+      font-size: 28px;
+    }
+  
+    .text2 {
+      font-size: 18px;
+    }
+  
+    form {
+      grid-template-columns: 1fr;
+    }
+}
+  
+@media (max-width: 768px) {
+   .contenido h3 {
+      font-weight: bold;
+      color: #EEEEEE;
+    }
+}
+
