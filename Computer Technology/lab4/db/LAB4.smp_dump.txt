@@ -1,0 +1,7 @@
+
+State Machine - |lab4|current_state
+Name current_state.state_bit_1 current_state.state_bit_0 
+current_state.start 0 0 
+current_state.first 0 1 
+current_state.second 1 1 
+current_state.third 1 0 
