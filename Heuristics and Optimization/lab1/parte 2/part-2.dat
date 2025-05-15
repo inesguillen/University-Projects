@@ -1,0 +1,89 @@
+data;
+
+set TARIFAS := estandar leisure business; 	# tarifas disponibles
+set AVIONES := A1 A2 A3 A4 A5; 				# Aviones disponibles
+set PISTAS_ATERRIZAJE := P1 P2 P3 P4;      	# Pistas de aterrizaje disponibles
+set SLOTS_ATERRIZAJE := S1 S2 S3 S4 S5 S6;  # Slots de aterrizaje disponibles
+set SLOTS_CONSECUTIVOS := C1 C2 C3 C4 C5;   # Slots consecutivos
+
+# PARAMETROS
+# Equipaje permitido por tarifa
+param EQUIPAJE :=  
+	estandar  1
+	leisure  20
+	business  40;
+
+# Precio de cada tarifa
+param PRECIO :=	
+	estandar  19
+	leisure  49
+	business  69;
+
+# Mínimos billetes por tarifa
+param MIN_BILLETES :=  
+	estandar  0
+	leisure  20
+	business  10;
+
+# Asientos disponibles por avión
+param ASIENTOS := 	 
+	A1  90
+	A2  120
+	A3  200
+	A4  150
+	A5  190;
+
+# Capacidad de carga (en kg) por avión
+param CAPACIDAD := 
+	A1  1700
+	A2  2700
+	A3  1300
+	A4  1700
+	A5  2000;
+
+# Tiempos de aterrizaje por pista y slot
+param TIEMPOS_ATERRIZAJE : S1 S2 S3 S4 S5 S6 :=  
+		P1 0 15 30 45 60 75
+		P2 0 15 30 45 60 75
+		P3 0 15 30 45 60 75
+		P4 0 15 30 45 60 75;
+
+# Slots válidos para cada pista
+param SLOTS_ATERRIZAJE_VALIDOS : S1 S2 S3 S4 S5 S6 := 
+		P1 0 0 0 0 1 1
+		P2 0 0 1 1 0 0
+		P3 1 1 1 0 0 1
+		P4 1 0 0 0 1 1;
+
+# Tiempos de llegada de los aviones
+param LLEGADA_AVIONES := 
+	A1 10
+	A2 -5
+	A3 40
+	A4 55
+	A5 70;
+
+# Límites de llegada de los aviones
+param LLEGADA_AVIONES_LIM := 
+	A1 75
+	A2 30
+	A3 60
+	A4 75
+	A5 90;
+
+# Coste de cada avión por tiempo de llegada
+param LLEGADA_AVIONES_COSTE :=
+	A1 100
+	A2 200
+	A3 150
+	A4 250
+	A5 200;
+  
+# Slots consecutivos para seguridad
+param CONSECUTIVOS : S1 S2 S3 S4 S5 S6 :=
+	C1 1 1 0 0 0 0
+	C2 0 1 1 0 0 0
+	C3 0 0 1 1 0 0
+	C4 0 0 0 1 1 0
+	C5 0 0 0 0 1 1;	
+end;
