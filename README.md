@@ -121,7 +121,7 @@ We learned the basics of supervised and unsupervised learning, using classical a
 
 ---
 
-### 🔹 Compiladores / Compilers
+### 🔹 Procesadores del Lenguaje / Compilers
 
 Este proyecto se dividió en dos fases diferenciadas: un frontend que traduce un subconjunto del lenguaje **C** a una representación intermedia en estilo **LISP**, y un backend que transforma ese código intermedio a una versión en notación postfija. Para ello, utilizamos **Bison/Yacc** y definimos nuestras propias reglas gramaticales para cada fase del traductor.
 
@@ -129,7 +129,7 @@ This project was structured in two separate stages: a frontend that translated a
 
 ---
 
-### 🔹 Sistemas Ubicuos / Interactive and ubiquitous systems
+### 🔹 Sistemas Interactivos y Ubicuos / Interactive and ubiquitous systems
 
 Nos centramos en el desarrollo de aplicaciones ubicuas, que pueden ejecutarse en diferentes dispositivos y entornos. Trabajamos con tecnologías móviles y desarrollamos una aplicación que recogía datos de sensores en **Android**.
 
