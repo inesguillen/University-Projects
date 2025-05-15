@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_f1RoomReservation_tests.TestRoomReservation-20240402230955" tests="30" file="test_f1RoomReservation_tests.py" time="0.047" timestamp="2024-04-02T23:09:56" failures="0" errors="0" skipped="0">
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc1" time="0.006" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc10" time="0.001" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc11" time="0.001" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc12" time="0.001" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc13" time="0.001" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc14" time="0.002" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc15" time="0.001" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc16" time="0.002" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc17" time="0.001" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc18" time="0.001" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc19" time="0.002" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc2" time="0.003" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc20" time="0.001" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc21" time="0.000" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc22" time="0.001" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc23" time="0.001" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc24" time="0.002" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc25" time="0.001" timestamp="2024-04-02T23:09:55"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc26" time="0.001" timestamp="2024-04-02T23:09:56"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc27" time="0.001" timestamp="2024-04-02T23:09:56"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc28" time="0.001" timestamp="2024-04-02T23:09:56"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc29" time="0.001" timestamp="2024-04-02T23:09:56"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc3" time="0.005" timestamp="2024-04-02T23:09:56"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc30" time="0.001" timestamp="2024-04-02T23:09:56"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc4" time="0.001" timestamp="2024-04-02T23:09:56"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc5" time="0.001" timestamp="2024-04-02T23:09:56"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc6" time="0.002" timestamp="2024-04-02T23:09:56"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc7" time="0.001" timestamp="2024-04-02T23:09:56"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc8" time="0.001" timestamp="2024-04-02T23:09:56"/>
+	<testcase classname="test_f1RoomReservation_tests.TestRoomReservation" name="test_room_reservation_tc9" time="0.002" timestamp="2024-04-02T23:09:56"/>
+</testsuite>

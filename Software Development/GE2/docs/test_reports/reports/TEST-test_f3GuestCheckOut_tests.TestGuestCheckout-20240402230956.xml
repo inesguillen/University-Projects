@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_f3GuestCheckOut_tests.TestGuestCheckout-20240402230956" tests="8" file="test_f3GuestCheckOut_tests.py" time="0.105" timestamp="2024-04-02T23:09:58" failures="0" errors="0" skipped="0">
+	<testcase classname="test_f3GuestCheckOut_tests.TestGuestCheckout" name="test_guest_arrival_tc4" time="0.016" timestamp="2024-04-02T23:09:58"/>
+	<testcase classname="test_f3GuestCheckOut_tests.TestGuestCheckout" name="test_guest_arrival_tc5" time="0.003" timestamp="2024-04-02T23:09:58"/>
+	<testcase classname="test_f3GuestCheckOut_tests.TestGuestCheckout" name="test_guest_arrival_tc6" time="0.002" timestamp="2024-04-02T23:09:58"/>
+	<testcase classname="test_f3GuestCheckOut_tests.TestGuestCheckout" name="test_guest_arrival_tc7" time="0.013" timestamp="2024-04-02T23:09:58"/>
+	<testcase classname="test_f3GuestCheckOut_tests.TestGuestCheckout" name="test_guest_arrival_tc8" time="0.016" timestamp="2024-04-02T23:09:58"/>
+	<testcase classname="test_f3GuestCheckOut_tests.TestGuestCheckout" name="test_guest_checkout_tc1" time="0.016" timestamp="2024-04-02T23:09:58"/>
+	<testcase classname="test_f3GuestCheckOut_tests.TestGuestCheckout" name="test_guest_checkout_tc2" time="0.015" timestamp="2024-04-02T23:09:58"/>
+	<testcase classname="test_f3GuestCheckOut_tests.TestGuestCheckout" name="test_guest_checkout_tc3" time="0.023" timestamp="2024-04-02T23:09:58"/>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_f2GuestArrival_tests.TestGuestArrival-20240402230956" tests="8" file="test_f2GuestArrival_tests.py" time="0.168" timestamp="2024-04-02T23:09:57" failures="0" errors="0" skipped="0">
+	<testcase classname="test_f2GuestArrival_tests.TestGuestArrival" name="test_guest_arrival_tc1" time="0.100" timestamp="2024-04-02T23:09:57"/>
+	<testcase classname="test_f2GuestArrival_tests.TestGuestArrival" name="test_guest_arrival_tc2" time="0.017" timestamp="2024-04-02T23:09:57"/>
+	<testcase classname="test_f2GuestArrival_tests.TestGuestArrival" name="test_guest_arrival_tc3" time="0.025" timestamp="2024-04-02T23:09:57"/>
+	<testcase classname="test_f2GuestArrival_tests.TestGuestArrival" name="test_guest_arrival_tc4" time="0.006" timestamp="2024-04-02T23:09:57"/>
+	<testcase classname="test_f2GuestArrival_tests.TestGuestArrival" name="test_guest_arrival_tc5" time="0.007" timestamp="2024-04-02T23:09:57"/>
+	<testcase classname="test_f2GuestArrival_tests.TestGuestArrival" name="test_guest_arrival_tc6" time="0.002" timestamp="2024-04-02T23:09:57"/>
+	<testcase classname="test_f2GuestArrival_tests.TestGuestArrival" name="test_guest_arrival_tc7" time="0.003" timestamp="2024-04-02T23:09:57"/>
+	<testcase classname="test_f2GuestArrival_tests.TestGuestArrival" name="test_guest_arrival_tc8" time="0.007" timestamp="2024-04-02T23:09:57"/>
+</testsuite>

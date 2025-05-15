@@ -1,0 +1,70 @@
+WARNING: '.' not a valid package name; please use only .-separated package names in setup.py
+running clean
+'build\lib' does not exist -- can't clean it
+'build\bdist.win-amd64' does not exist -- can't clean it
+'build\scripts-3.11' does not exist -- can't clean it
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build\lib
+copying main.py -> build\lib
+copying __init__.py -> build\lib
+creating build\lib\UC3MTravel
+copying UC3MTravel\HotelManagementException.py -> build\lib\UC3MTravel
+copying UC3MTravel\HotelManager.py -> build\lib\UC3MTravel
+copying UC3MTravel\HotelReservation.py -> build\lib\UC3MTravel
+copying UC3MTravel\HotelStay.py -> build\lib\UC3MTravel
+copying UC3MTravel\__init__.py -> build\lib\UC3MTravel
+c:\cosas\uni\2do\desarrollo de software\ge2\.pybuilder\plugins\cpython-3.11.2.final.0\Lib\site-packages\setuptools\_distutils\cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+installing to build\bdist.win-amd64\wheel
+running install
+running install_lib
+creating build\bdist.win-amd64
+creating build\bdist.win-amd64\wheel
+copying build\lib\main.py -> build\bdist.win-amd64\wheel\.
+creating build\bdist.win-amd64\wheel\UC3MTravel
+copying build\lib\UC3MTravel\HotelManagementException.py -> build\bdist.win-amd64\wheel\.\UC3MTravel
+copying build\lib\UC3MTravel\HotelManager.py -> build\bdist.win-amd64\wheel\.\UC3MTravel
+copying build\lib\UC3MTravel\HotelReservation.py -> build\bdist.win-amd64\wheel\.\UC3MTravel
+copying build\lib\UC3MTravel\HotelStay.py -> build\bdist.win-amd64\wheel\.\UC3MTravel
+copying build\lib\UC3MTravel\__init__.py -> build\bdist.win-amd64\wheel\.\UC3MTravel
+copying build\lib\__init__.py -> build\bdist.win-amd64\wheel\.
+running install_egg_info
+running egg_info
+writing GE2.egg-info\PKG-INFO
+writing dependency_links to GE2.egg-info\dependency_links.txt
+writing namespace_packages to GE2.egg-info\namespace_packages.txt
+writing top-level names to GE2.egg-info\top_level.txt
+reading manifest file 'GE2.egg-info\SOURCES.txt'
+writing manifest file 'GE2.egg-info\SOURCES.txt'
+Copying GE2.egg-info to build\bdist.win-amd64\wheel\.\GE2-1.0.dev0-py3.11.egg-info
+running install_scripts
+creating build\bdist.win-amd64\wheel\GE2-1.0.dev0.dist-info\WHEEL
+creating 'dist\GE2-1.0.dev0-py3-none-any.whl' and adding 'build\bdist.win-amd64\wheel' to it
+adding '__init__.py'
+adding 'main.py'
+adding 'UC3MTravel/HotelManagementException.py'
+adding 'UC3MTravel/HotelManager.py'
+adding 'UC3MTravel/HotelReservation.py'
+adding 'UC3MTravel/HotelStay.py'
+adding 'UC3MTravel/__init__.py'
+adding 'GE2-1.0.dev0.dist-info/METADATA'
+adding 'GE2-1.0.dev0.dist-info/WHEEL'
+adding 'GE2-1.0.dev0.dist-info/namespace_packages.txt'
+adding 'GE2-1.0.dev0.dist-info/top_level.txt'
+adding 'GE2-1.0.dev0.dist-info/zip-safe'
+adding 'GE2-1.0.dev0.dist-info/RECORD'
+removing build\bdist.win-amd64\wheel
