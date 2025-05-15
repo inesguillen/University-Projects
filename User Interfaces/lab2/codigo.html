@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/estilos.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	    <title>Papá Noel</title>
+    </head>
+    
+    <body>
+        <section id="homepage"> 
+            <header class="topNavBar">
+                <div class="logo">
+                    <img src="imagenes/logo.png" alt="logo">
+                </div>
+                <nav id ="navegador">
+                    <a href="">Home</a>
+                    <a href="#PapaNoel">Papá Noel</a>
+                    <a href="#cartas">Las cartas</a>
+                    <a href="#enviacarta">Envía tu carta</a>
+                    <a href="#Juega">¡Juega!</a>
+                    
+                    <button type="button" class="btn0" id="inicioButton">Sign In</button>
+                    <button type="button" class="btn1" id="registroButton">Register</button>
+                    
+                    <div id="new-button" style = "display: none;"></div>
+                </nav>
+            </header>
+
+            <br>
+            <br>
+            
+            <h1 class="text1" >Sigue a Papá Noel</h1>
+            
+            <!--CONTADOR DIAS RESTANTES-->
+            <div class="cuentaAtras">
+                <ul class="cuentaAtras-ul">
+                    <div class="countainer-ul">
+                        <li class="date-item"><span class="dias">0</span>Dias</li>
+                        <li class="date-item"><span class="horas">0</span>Horas</li>
+                        <li class="date-item"><span class="minutos">0</span>Minutos</li>
+                        <li class="date-item"><span class="segundos">0</span>Segundos</li>
+                    </div>
+                </ul>
+            </div>
+
+            <div style="text-align: center;">
+                <button class="btn2" style="text-align: center;">Empezar</button>
+            </div>
+            
+            <!--INICIAR SESION-->
+            <div id="inicio-popup" class="popup" style="display: none;">
+                <div class="popup-content">
+                    <h2>Iniciar Sesión</h2>
+                    <form id="inicio-formulario">
+                        <label for="usuario">Nombre del Usuario:</label>
+                        <input type="text" id="usuario" name="usuario" required>
+                    
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" required>
+                        
+                        <button type="submit" class="btnFormulario">Aceptar</button>
+                        <button type="button" id="cancelar-inicio" class="btnFormulario">Cancelar</button>
+                        <p id="error-mensaje-inicio" style="color: rgb(251, 0, 0)"></p>
+                    </form>
+                </div>
+            </div>
+
+            <!--REGISTRARSE-->
+            <div id="registro-popup" class="popup" style="display: none;">
+                <div class="popup-content">
+                    <h2>Formulario de Registro</h2>
+                    <form id="registro-formulario">
+                        <label for="nombre-usuario">Nombre de usuario:</label>
+                        <input type="text" id="nombre-usuario" required minlength="3">
+
+                        <label for="contrasena-registro">Contraseña:</label>
+                        <input type="password" id="contrasena-registro" required minlength="12">
+
+                        <label for="repetir-contrasena">Repetir contraseña:</label>
+                        <input type="password" id="repetir-contrasena" required>
+
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" required pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">
+
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" id="ciudad" required minlength="3">
+
+                        <label for="pais">País:</label>
+                        <input type="text" id="pais" required minlength="3">
+
+                        <label for="genero">Género:</label>
+                        <select id="genero">
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Otro">Otro</option>
+                            <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                        </select>
+
+                        <label for="hijos">¿Cuántos hijos / hijas tienes?</label>
+                        <input type="number" id="hijos" min="1">
+                        <div id="hijos-formulario"></div>
+                        
+                        
+                        <button type="submit" class="btnFormulario">Registrarse</button>
+                        <button id="cancelar-registro" class="btnFormulario">Cancelar</button>
+                        <button id="limpiar-campos" class="btnFormulario">Limpiar Campos</button>
+                            
+                    </form>
+                    <p id="error-mensaje-reg" class="error-message" style="color: rgb(251, 0, 0)"></p>
+                </div>
+            </div>
+
+            <!--EDITAR DATOS USUARIO-->
+            <div id="editar-popup" class="popup" style="display: none;">
+                <div class="popup-content">
+                    <h2>Editar Perfil</h2>
+                    <form id="editar-formulario">
+                        <label for="editar-nombre">Nombre:</label>
+                        <input type="text" id="editar-nombre" required>
+
+                        <label for="editar-ciudad">Ciudad:</label>
+                        <input type="text" id="editar-ciudad" required minlength="3">
+
+                        <label for="editar-pais">País:</label>
+                        <input type="text" id="editar-pais" required minlength="3">
+
+                        <label for="editar-genero">Género:</label>
+                        <select id="editar-genero">
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Otro">Otro</option>
+                            <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                        </select>
+
+                        <!--MOSTRAMOS TOTAL DE HIJOS DEL USUARIO-->
+                        <div id="numero-hijos">Total de hijos: </div> 
+                        <div id="editar-hijos-formulario"></div>
+                        
+                        <!--AÑADIMOS UN HIJO-->
+                        <button type="button" onclick="nuevoHijo()">Agregar nuevo hijo</button>
+
+                        <button type="submit" class="btnFormulario">Guardar Cambios</button>
+                        <button id="cancelar-editar" class="btnFormulario">Cancelar</button>
+                    </form>
+                    <div id="error-mensaje-editar" style="color: red; display: none;"></div>
+                </div>
+            </div>
+
+            <!--MOSTRAR CARTAS ENVIADAS-->
+            <div id="cartas-popup" class="popup" style="display: none;">
+                <div class="popup-content">
+                    <h1 >Tus Cartas enviadas</h1>
+                    <div id="cartas-container"></div>
+                    <button id="cerrar-cartas-popup" class="btnFormulario">Cancelar</button>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION PAPA NOEL-->
+        <section id="PapaNoel">
+            <header>
+                <h1 style="color: #EEEEEE;">Papá noel</h1>
+            </header>
+            
+            <div class="row">
+                <div class="column">
+                    <img class="fotoNoel" src = "imagenes/noel.jpg" alt ="Papa noel" >
+                </div>
+                <div class="column">
+                    <h2 style="color: white;">¿Quien es Papá Noel?</h2>
+                    <br>
+                    <p style="text-align: center; color: #EEEEEE;"> Según Britannica, Papá Noel no se inspiró únicamente en San Nicolás.
+                    La figura del anciano que hace regalos tiene distintas apariencias y nombres, desde Christkind o Nikolaus en Alemania, 
+                    Father Christmas (en Inglaterra) y Santa Claus en Estados Unidos, así como en varios otros países.</p>
+                    <p style="text-align: center; color: #EEEEEE;">Papá Noel, conocido también como Santa Claus (en neerlandés: Sinterklaas) es un personaje legendario originario del cristianismo occidental, 
+                        conocido por repartir regalos a niños durante las noches de Nochebuena y Navidad (24 y 25 de diciembre).</p>
+                    <p style="text-align: center; color:#EEEEEE ;">Estos regalos pueden contener juguetes, golosinas, carbón o simplemente nada, dependiendo de si el infante se encuentra en la «lista de niños buenos o malos».
+                        Según la leyenda, Papá Noel fabrica los regalos con ayuda de sus elfos, con los que trabaja en su taller, repartiendo los regalos con ayuda de sus renos que tiran de su trineo por el aire.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION CARTAS PREDETERMINADAS-->
+         <section id="cartas">
+             <header>
+                <h1>Las cartas</h1>
+            </header>
+            
+            <div class="caja">
+                <article class="carta">
+                    <div class="carta-header">Carta 1</div>
+                    <div class="carta-cuerpo">
+                        <img src="imagenes/ines.jpg" alt="Foto de quien envía la carta">
+                        <div class="contenido">
+                            <h3>INÉS</h3>
+                            <p>Ciudad: Madrid</p>
+                            <p>País: España</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="carta">
+                    <div class="carta-header">Carta 2</div>
+                    <div class="carta-cuerpo">
+                        <img src="imagenes/niki.jpg" alt="Foto de quien envía la carta">
+                        <div class="contenido">
+                            <h3>NIKI</h3>
+                            <p>Ciudad: Madrid</p>
+                            <p>País: España</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="carta">
+                    <div class="carta-header">Carta 3</div>
+                    <div class="carta-cuerpo">
+                        <img src="imagenes/isa.jpg" alt="Foto de quien envía la carta">
+                        <div class="contenido">
+                            <h3>ISA</h3>
+                            <p>Ciudad: Madrid</p>
+                            <p>País: España</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="carta">
+                    <div class="carta-header">Carta 4</div>
+                    <div class="carta-cuerpo">
+                        <img src="imagenes/ici.jpg" alt="Foto de quien envía la carta">
+                        <div class="contenido">
+                            <h3>ICI</h3>
+                            <p>Ciudad: Madrid</p>
+                            <p>País: España</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="carta">
+                    <div class="carta-header">Carta 5</div>
+                    <div class="carta-cuerpo">
+                        <img src="imagenes/clau.jpg" alt="Foto de quien envía la carta">
+                        <div class="contenido">
+                            <h3>CLAU</h3>
+                            <p>Ciudad: Madrid</p>
+                            <p>País: España</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="carta">
+                    <div class="carta-header">Carta 6</div>
+                    <div class="carta-cuerpo">
+                        <img src="imagenes/siia.jpg" alt="Foto de quien envía la carta">
+                        <div class="contenido">
+                            <h3>SIIA</h3>
+                            <p>Ciudad: Madrid</p>
+                            <p>País: España</p>
+                        </div>
+                    </div>
+                </article>
+            </div> 
+        </section> 
+
+        <!--SECCION ENVIAR CARTAS, INICIADA LA SESION-->
+        <section id="enviacarta">
+            <header>
+                <h1>Envía tus cartas</h1>
+            </header>
+            <form id="carta-formulario">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div>    
+                    <label for="correo">Email:</label>
+                    <input type="email" id="correo-carta" name="correo" required>
+                </div>
+
+                <div>
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad-carta" name="ciudad" required>
+                </div>
+                
+                <div>
+                    <label for="pais">País:</label>  
+                    <input type="text" id="pais-carta" name="pais" required>
+                </div>
+                
+                <div>
+                    <label for="carta">Carta para Papá Noel:</label>
+                    <textarea id="carta" name="carta" required></textarea>
+                </div>
+
+                <button type="submit" class="btnFormulario">Envía</button>
+            </form>
+            <!--mostrar error-->
+            <div id="error-mensaje-carta" style="display: none; justify-content:center; color: rgb(255, 255, 255);"></div>
+        </section>
+
+        <!--SECCION JUEGOS-->
+        <section id="Juega">
+            <header>
+                <h1> ¡Juega! </h1>
+            </header>
+			
+            <div class="caja-juego">             
+                <div class="button-wrapper">
+                        <button id=" button1" onclick = " return startGame1()">Get the Cookies</button>
+                        <br>
+                        <button href="button2" onclick = "return startGame2()">Juego 2</button>
+                        <br>
+                        <button href="button3">Juego 3</button>
+				</div>
+                <div class="games" id ="juego1" ></div>
+            </div>
+        </section>
+
+        <!--SECCION PIE DE PAGINA, ENLACES Y LOGOS-->
+        <section id="enlaces">
+            <div class="colLogo">
+                <img class="logo" src="imagenes/x.png" alt="logo X">
+                <img class="logo" src="imagenes/insta.png" alt="logo Instagram">
+                <img class="logo" src="imagenes/yt.png" alt="logo Youtube">
+                <img class="logo" src="imagenes/logo.png" alt="logo">
+            
+                <div class="column1">
+                    <h1 class="enlaces"> Enlaces Utiles</h1>
+                    <br>
+                    <a href="https://www.w3schools.com/html/"><strong>Enlace 1</strong></a>
+                    <br>
+                    <a href="https://www.w3schools.com/html/html_css.asp"><strong>Enlace 2</strong></a>
+                    <br>
+                    <a href="https://www.w3schools.com/html/html_basic.asp"><strong>Enlace 3</strong></a>
+                </div>
+            </div>
+        </section>
+
+        <!--SCRIPTS-->
+        <script src="script/CuentaAtras.js"></script>
+        <script src="script/registroFormulario.js"></script>
+        <script src="script/inicioSesion.js"></script>
+        <script src="script/enviaCarta.js"></script>
+		<script src="script/Juegos.js"></script>
+
+    </body>
+</html>
+
+

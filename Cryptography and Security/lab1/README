@@ -1,0 +1,16 @@
+Cómo moverse por la interfaz de la aplicación
+
+Para iniciar la aplicación, ejecutar main.py
+
+Ahora estamos en un menú con tres opciones: iniciar sesión, registro y salir. Eliges la opción que quieras introduciendo el  número correspondiente a esa opción.
+
+Para salir de la aplicación (detener la ejecución de main.py), introducir "3".
+
+Si es tu primera vez, debes registrarte, opción "2". Completar el formulario. Si algún dato no es válido, la aplicación lo indicará y debes comenzar el formulario de nuevo.
+
+Ahora puedes iniciar sesión con tu usuario, opción "1". Aquí obtendrás 4 opciones: ver, abrir, subir, eliminar y salir:
+- "5" te devuelve a la página inicial.
+- "1" te muestra los archivos ya guardados.
+- "2" te permite abrir un archivo. Debes darle el nombre del archivo con el mismo formato que tiene cuando lo visualizas en la opción 1
+- "3" te permite subir un archivo. Debe estar ubicado en tu dispositivo. Para subirlo, copiar la ruta completa con formato C:\Users\usuarios\carpeta\subcarpeta\archivo.pdf (IMPORTANTE: WINDOWS POR DEFECTO LO COPIA ENTRE COMILLAS "", EN INPUT DEBE SER SIN ELLAS)
+- "4" te permite eliminar un archivo. Se especifica del mismo modo que en la opción 2 "abrir"
