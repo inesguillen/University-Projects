@@ -113,6 +113,39 @@ We developed an application implementing various cryptographic techniques. It wa
 
 ---
 
+### 🔹 Aprendizaje Automático / Machine Learning
+
+En esta asignatura aprendimos los fundamentos del aprendizaje supervisado y no supervisado, utilizando algoritmos clásicos como regresión, árboles de decisión y redes neuronales básicas. Los proyectos se desarrollaron en **Python**, en notebooks *Jupyter*, principalmente con la biblioteca **scikit-learn**.
+
+We learned the basics of supervised and unsupervised learning, using classical algorithms such as regression, decision trees, and simple neural networks. Projects were implemented in **Python**, mostly with **scikit-learn**.
+
+---
+
+### 🔹 Compiladores / Compilers
+
+Este proyecto se dividió en dos fases diferenciadas: un frontend que traduce un subconjunto del lenguaje **C** a una representación intermedia en estilo **LISP**, y un backend que transforma ese código intermedio a una versión en notación postfija. Para ello, utilizamos **Bison/Yacc** y definimos nuestras propias reglas gramaticales para cada fase del traductor.
+
+This project was structured in two separate stages: a frontend that translated a subset of the **C** language into an intermediate **LISP**-style code, and a backend that converted this intermediate representation into postfix notation. We used **Bison/Yacc** and wrote custom grammar rules for both translation phases.
+
+---
+
+### 🔹 Sistemas Ubicuos / Interactive and ubiquitous systems
+
+Nos centramos en el desarrollo de aplicaciones ubicuas, que pueden ejecutarse en diferentes dispositivos y entornos. Trabajamos con tecnologías móviles y desarrollamos una aplicación que recogía datos de sensores en **Android**.
+
+We focused on developing ubiquitous applications that run across different environments and devices. We worked with mobile and IoT technologies, and built an app that collected sensor data on **Android**.
+
+---
+
+### 🔹 Sistemas Distribuidos / Distributed Systems
+
+Una asignatura fundamental para entender cómo se comunican sistemas remotos entre sí. Implementamos mecanismos como comunicación por sockets, paso de mensajes, y servicios web. Todo el código fue escrito en **C**.
+
+This subject helped us understand how remote systems interact. We implemented mechanisms such as socket communication, message passing, and web services. Everything was programmed in **C**.
+
+---
+
+
 ## 📝 Licencia / License
 
 Este repositorio está bajo la licencia MIT. Puedes consultar los detalles en el archivo `LICENSE`.
