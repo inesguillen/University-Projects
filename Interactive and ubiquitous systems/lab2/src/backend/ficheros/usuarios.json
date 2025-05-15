@@ -1,0 +1,9 @@
+{
+  "usuarios": [
+    {
+      "email": "prueba@prueba.com",
+      "nombre": "Prueba",
+      "contraseña": "Prueba"
+    }
+  ]
+}

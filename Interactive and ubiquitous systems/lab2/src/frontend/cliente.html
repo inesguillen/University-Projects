@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organiza-T Menú</title>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body style="display: block; justify-items: center; background-color:rgb(148, 187, 238); block-size: 18% 3% 78%;">
+  <h1 id="bienvenida">Hola [$nombre$], bienvenid@.</h1>
+
+  <p style="justify-self: center; font-size: 14px;">¿Qué quieres hacer?</p>
+
+  <section id="tareaDetectada" style="display: none; width: 70vw; background-color: azure; justify-items: center; padding: 2%;">
+    <p>¡La siguiente tarea ha llegado a la fecha límite!:</p>
+    <p id="tareaLimite"></p>
+    <ul>
+      <li>Gestos➡️✅ ↬ Inclina el dispositivo hacia la derecha para marcar como completada</li>
+      <li>Gestos⬅️⏭️ ↬ Inclina el dispositivo hacia la izquierda para posponerla 1 semana</li>
+    </ul>
+  </section>
+
+  <section id="comandosSection" style="width: 70vw; background-color: azure; justify-items: center; padding: 2%;">
+    <h2>Comandos</h2>
+    <ul style="list-style-type: none;"">
+      <li>➡️🗣️ ↬ Inclina el dispositivo hacia la derecha para comenzar el reconocimiento de voz</li>
+      <li>⬅️📷 ↬ Inclina el dispositivo hacia la izquierda para comenzar a escanear</li>
+      <li>📌 ↬ Di 'Añadir evento' para añadir un evento nuevo</li>
+      <li>📝 ↬ Di 'Añadir tarea' para añadir una tarea nueva</li>
+      <li>🗓️ ↬ Di 'Ver calendario' para consultar las fechas del calendario</li>
+      <li></li>
+      <li>⬆️🚫 ↬ Inclina el dispositivo hacia atrás para cerrar sesión</li>
+    </ul>
+    <p id="comandoVoz"></p>
+  </section>
+
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script src="funcionalidad/cliente.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organiza-T Ordenador</title>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<style>
+  button {
+    border: none; 
+    color: black; 
+    padding: 1vh 2vw;
+    cursor: pointer; 
+    border-radius: 5px;
+  }
+
+  .verde {background-color: white; border: 2px solid #04AA6D;} 
+  .verde:hover {background-color: #46a049; color: white;}
+
+  .tarea {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+  }
+</style>
+<body style="display: block; justify-items: center; background-color:rgb(148, 187, 238); block-size: 18% 3% 78%;">
+  <h1 id="bienvenida">Hola [$nombre$], bienvenid@.</h1>
+  <h1 id="diaImpreso" style="display: none; font-size: 5vh;">2025-04-19</h1>
+  <h1 id="mesImpreso" style="display: none; font-size: 5vh;">abril</h1>
+
+  <p id="espera" style="justify-self: center; font-size: 14px;">Esperando instrucciones del dispositivo móvil...</p>
+
+  <section id="eventos" style="display: none;">
+    <h2>Eventos</h2>
+    <div id="eventosDiv" style="display: flex; flex-direction: column; gap: 1vh;"></div>
+  </section>
+  
+  <section id="tareas" style="display: none;">
+    <h2>Tareas</h2>
+    <div id="tareasDiv" style="display: flex; flex-direction: column; gap: 1vh;"></div>
+  </section>
+
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script src="funcionalidad/ordenadorApp.js"></script>
+</body>
+</html>

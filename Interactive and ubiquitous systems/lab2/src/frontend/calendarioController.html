@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organiza-T Ver Calendario</title>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+
+<style>
+
+  #cameraContainer {
+    width: 320px; 
+    height: 240px;
+    border: 2px solid #ccc;
+    top: 20px; 
+    right: 20px;
+    z-index: 10;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  button {
+    border: none; 
+    color: black; 
+    padding: 1vh 4vw;
+    cursor: pointer; 
+    border-radius: 5px;
+    font-size: 2vh; 
+  }
+
+  .verde {background-color: white; border: 2px solid #04AA6D;} 
+  .verde:hover {background-color: #46a049; color: white;}
+
+  .gris {background-color: white; border: 2px solid #e7e7e7;} 
+  .gris:hover {background: #ddd; color: black; border: 2px solid #e7e7e7;} 
+</style>
+
+<body style="display: flex; flex-direction: column; justify-items: center; align-items: center; background-color:rgb(148, 187, 238); gap: 1vh;">
+  <h1 id="headerTarea" style="margin: auto">¿Quieres consultar un mes o el día actual?</h1>
+
+  <section id="comandosIniciales" style="width: 90vw; background-color: azure; padding: 2%; font-size: 13px;">
+    <p>⬅️🗓️ Inclina el móvil hacia la izquierda y di el mes para consultarlo</p>
+    <p>➡️📅 Inclina el móvil hacia la derecha para consultar el día actual</p>
+    <p>⬆️🔙 Inclina el móvil hacia atrás para volver al menú</p>
+  </section>
+
+  <section id="comandosCambios" style="display: none; width: 90vw; background-color: azure; padding: 2%; font-size: 13px;">
+    <p>➡️ Inclina el móvil hacia la derecha para ir al mes / día siguiente</p>
+    <p>⬅️ Inclina el móvil hacia la izquierda para ir al mes / día anterior</p>
+    <p>🔙 Inclina el móvil hacia atrás para volver al menú</p>
+    <p>👍 Levante el pulgar derecho para retroceder de mes</p>
+    <p>☝ Levante el indice para avanzar de mes</p>
+  </section>
+
+  <div id="cameraContainer">
+    <video id="video"></video>
+  </div>
+  
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <!--script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script-->
+  <!--script src="https://unpkg.com/handtrackjs/dist/handtrack.min.js" defer></script-->
+  <!-- TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+
+  <!-- MediaPipe Hands -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+
+  <script src="funcionalidad/calendarioApp.js"></script>
+</body>
+</html>

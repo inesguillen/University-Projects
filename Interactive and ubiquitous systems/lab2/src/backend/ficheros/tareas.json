@@ -1,0 +1,25 @@
+{
+  "tareas": [
+    {
+      "emailUsuario": "prueba@prueba.com",
+      "listaTareas": [
+        {
+          "nombre": "E2 Ubicuos",
+          "descripcion": "Entregar la segunda parte del trabajo",
+          "fecha": "2025-04-25",
+          "hora": "23:59",
+          "lugar": "Universidad Carlos III de Madrid",
+          "completada": false
+        },
+        {
+          "nombre": "E3 Ubicuos",
+          "descripcion": "Entregar la tercera parte del trabajo",
+          "fecha": "2025-05-09",
+          "hora": "23:59",
+          "lugar": "Universidad Carlos III de Madrid",
+          "completada": false
+        }
+      ]
+    }
+  ]
+}

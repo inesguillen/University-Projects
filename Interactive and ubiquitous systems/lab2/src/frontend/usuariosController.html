@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organiza-T inicio sesión</title>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<style>
+  input {
+    border: none; 
+    color: black; 
+    padding: 10px;
+    width: 100%;
+    cursor: pointer; 
+    border-radius: 5px;
+  }
+  button {
+    border: none; 
+    color: black; 
+    padding: 10px;
+    cursor: pointer; 
+    border-radius: 5px; 
+  }
+  .gris {background-color: white; border: 2px solid #e7e7e7;} 
+  .gris:hover {background: #ddd; color: black; border: 2px solid #e7e7e7;} 
+
+  .verde {background-color: white; border: 2px solid #04AA6D;} 
+  .verde:hover {background-color: #46a049; color: white;}
+
+  .rojo {background-color: white; border: 2px solid #f44336;} 
+  .rojo:hover {background: #da190b; color: white;}
+</style>
+<body style="display: block; justify-items: center; background-color:rgb(148, 187, 238);">
+  <h1 style="height: 8vh; font-size: 6vh;">Bienvenido a Organiza-T</h1>
+
+  <!-- Formulario de login -->
+  <section id="inicioSesion" style="font-size: 2vh; padding: 2%; width: 70vw; height: 60vh; justify-items: center;">
+    <h2 style="font-size: 4.5vh;">Iniciar Sesión</h2>
+    <form id="loginForm" style=" display: flex; flex-direction: column; align-items: center; gap: 1vh;">
+      <input type="email" id="loginEmail" placeholder="Email" />
+      <input type="password" id="loginContraseña" placeholder="Contraseña" />
+      <button type="submit" class="verde">Iniciar Sesión</button>
+      <p id="resultadoLogin"></p>
+    </form>
+    <p id="posibleRegistro">¿Aún no tienes cuenta?</p>
+    <button id="botonRegistro" class="gris">Registro</button>
+    <p id="posibleBaja">¿Ya no te interesa nuestra app?</p>
+    <button id="botonBaja" class="rojo">Darse de baja</button>
+  </section>
+
+  <!-- Formulario de registro -->
+  <section id="registroUsuario" style="display: none; font-size: 2vh; padding: 2%; width: 70vw; height: 60vh; justify-items: center;">
+    <h2 style="font-size: 4.5vh;">Registro de Usuario</h2>
+    <form id="registroForm" style=" display: flex; flex-direction: column; align-items: center; gap: 1vh;">
+      <input type="email" id="registroEmail" placeholder="Email" />
+      <input type="text" id="registroNombre" placeholder="Nombre" />
+      <input type="password" id="registroContraseña" placeholder="Contraseña" />
+      <button type="submit" class="verde">Registrarse</button>
+      <p id="resultadoRegistro"></p>
+    </form>
+    <button class="botonVolver gris">Volver al inicio</button>
+  </section>
+
+  <!-- Formulario de baja de usuario -->
+  <section id="bajaUsuario" style="display: none; font-size: 2vh; padding: 2%; width: 70vw; height: 60vh; justify-items: center;">
+    <h2 style="font-size: 4.5vh;">Darse de baja</h2>
+    <form id="deleteForm" style=" display: flex; flex-direction: column; align-items: center; gap: 1vh;">
+      <input type="email" id="deleteEmail" placeholder="Email" />
+      <button type="submit" class="rojo">Darse de baja</button>
+      <p id="resultadoDelete"></p>
+    </form>
+    <button class="botonVolver gris">Volver al inicio</button>
+  </section>
+
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script src="funcionalidad/usuariosApp.js"></script>
+</body>
+</html>

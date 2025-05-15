@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organiza-T Añádir fechas</title>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<style>
+  button {
+    border: none; 
+    color: black; 
+    padding: 1vh 4vw;
+    cursor: pointer; 
+    border-radius: 5px;
+    font-size: 2vh; 
+  }
+
+  .verde {background-color: white; border: 2px solid #04AA6D;} 
+  .verde:hover {background-color: #46a049; color: white;}
+
+  .gris {background-color: white; border: 2px solid #e7e7e7;} 
+  .gris:hover {background: #ddd; color: black; border: 2px solid #e7e7e7;} 
+</style>
+<body style="display: flex; flex-direction: column; justify-items: center; align-items: center; background-color:rgb(148, 187, 238); gap: 1vh;">
+  <h1 id="headerTarea" style="margin: auto">Añadir nueva tarea</h1>
+  <h1 id="headerEvento" style="display: none; margin: auto">Añadir nuevo evento</h1>
+
+  <section style="width: 90vw; background-color: azure; padding: 2%; font-size: 13px;">
+    <p>Selecciona el botón para cada campo y di sus valores</p>
+    <p>⬆️✅ Inclina el móvil hacia atrás para guardar la tarea</p>
+    <p>⬅️🏠Inclina el móvil hacia la izquierda para volver al menú</p>
+  </section>
+
+  <section id="formulario">
+    <!-- Formulario de nuevo evento -->
+    <form id="formEvento" style=" display: flex; flex-direction: column;">
+      <button id="nombreEventoButton" class="verde" type="button">Nombre</button>
+      <p id="nombreEvento">Cualquier nombre</p>
+      <button id="fechaEventoButton" class="verde" type="button">Fecha</button>
+      <p id="fechaEvento">'Día' del 'mes en número' del 'año'</p>
+      <button id="horaEventoButton" class="gris" type="button">Hora</button>
+      <p id="horaEvento">[Ejemplo: doce treinta]</p>
+      <button id="lugarEventoButton" class="gris" type="button">Lugar</button>
+      <p id="lugarEvento">[Cualquier dirección]</p>
+      <p id="resultadoEvento"></p>
+    </form>
+
+    <!-- Formulario de nueva tarea -->
+    <form id="formTarea" style=" display: flex; flex-direction: column;">
+      <button id="nombreTareaButton" class="verde" type="button">Nombre</button>
+      <p id="nombreTarea">Cualquier nombre</p>
+      <button id="descripcionTareaButton" class="gris" type="button">Descripción</button>
+      <p id="descripcionTarea">[Cualquier descripción]</p>
+      <button id="fechaTareaButton" class="gris" type="button">Fecha Límite</button>
+      <p id="fechaTarea">['Día' del 'mes en número' del 'año']</p>
+      <button id="horaTareaButton" class="gris" type="button">Hora Límite</button>
+      <p id="horaTarea">[Ejemplo: doce treinta]</p>
+      <button id="lugarTareaButton" class="gris" type="button">Lugar</button>
+      <p id="lugarTarea">[Cualquier dirección]</p>
+      <p id="resultadoTarea"></p>
+    </form>
+  </section>
+
+  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script src="funcionalidad/fechasApp.js"></script>
+</body>
+</html>

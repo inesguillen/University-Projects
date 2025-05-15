@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organiza-T Escáner</title>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <style>
+        button {
+            border: none; 
+            color: black; 
+            padding: 1vh 2vw;
+            cursor: pointer; 
+            border-radius: 5px;
+        }
+
+        .gris {background-color: white; border: 2px solid #e7e7e7;} 
+        .gris:hover {background: #ddd; color: black; border: 2px solid #e7e7e7;} 
+
+        .verde {background-color: white; border: 2px solid #04AA6D;} 
+        .verde:hover {background-color: #46a049; color: white;}
+
+        #video {
+            border: 1px solid #ccc;
+        }
+
+        #canvas {
+            display: none;
+        }
+
+        #output {
+            margin-top: 20px;
+        }
+
+        #guardarBtn, #mensajeEscaneo, #comandoGuardado {
+            display: none;
+        }
+
+        body {
+            background-color: rgb(148, 187, 238);
+        } 
+    </style>
+</head>
+
+<body>
+    <h1>Escanear textos</h1>
+
+    <p style="width: 90vw; background-color: azure; padding: 2%; font-size: 13px;">
+        Inclina el móvil hacia la izquierda para volver al menú principal
+    </p>
+
+    <input type="file" id="imageInput" accept="image/*" style="display: none;" />
+    
+    <!-- Video de la cámara -->
+    <video id="video" width="320" height="240" autoplay></video>
+    
+    <!-- Canvas oculto para tomar la foto -->
+    <canvas id="canvas"></canvas>
+    
+    <!-- Botones principales -->
+    <button id="capturarBtn" class="gris">Capturar imagen</button>
+    <button id="cambiarCamaraBtn" class="gris">Cambiar cámara</button>
+
+    <p id="escaneando" style="display: none;">Escaneando texto...</p>
+
+    <!-- Sección para mostrar resultado escaneado -->
+    <section id="escanearArchivo" style="display: none; width: 90vw; background-color: azure; padding: 2%; font-size: 13px;">
+        <p>Inclina el móvil hacia la derecha para escanear el archivo</p>
+        <p id="errorEscaneo" style="display: none; color: red;"></p>
+    </section>
+
+    <!-- Mensaje de escaneo correcto + botón de guardar -->
+    <section id="mensajeEscaneo" style="display: none; width: 90vw; background-color: #c8f7c5; padding: 2%; margin-top: 10px;">
+        <p>✅ Texto escaneado correctamente</p>
+        <p>Inclina el móvil hacia atrás para guardar el texto escaneado</p>
+        <p id="resultadoTexto"></p>
+        <button id="guardarBtn" class="verde">Guardar</button>
+    </section>
+
+    <!-- Confirmación al guardar -->
+    <div id="comandoGuardado" style="display: none; background-color: #d4edda; padding: 10px; margin-top: 10px;">
+        ✅ Comando guardado correctamente
+    </div>
+
+    <!-- Scripts -->
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.5/dist/tesseract.min.js"></script>
+    <script src="funcionalidad/escanearApp.js"></script>
+</body>
+</html>
