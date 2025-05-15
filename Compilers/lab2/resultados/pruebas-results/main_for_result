@@ -1,0 +1,9 @@
+(defun main()
+    (setq main_i 0)
+    (setf main_i 0)
+    (loop while (< main_i 3) do
+        (print "Hola")
+        (setf main_i (+ main_i 1))
+    )
+)
+

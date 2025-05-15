@@ -1,0 +1,8 @@
+(defun suma (suma_a suma_b)
+    (return-from suma (+ suma_a suma_b))
+)
+
+(defun main()
+    (setq main_r (suma  3 4))
+)
+

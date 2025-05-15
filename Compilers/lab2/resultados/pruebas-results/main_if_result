@@ -1,0 +1,9 @@
+(defun main()
+    (setq main_x 5)
+    (if (> main_x 0)
+        (progn (if (< main_x 10)
+                (progn (return-from main main_x)
+            ))
+    ))
+)
+

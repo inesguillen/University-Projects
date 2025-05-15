@@ -1,0 +1,18 @@
+variable a
+0 a !
+variable b
+0 b !
+: main
+10 a !
+BEGIN
+a @ 0 > WHILE
+a @ .
+a @ 2 mod 0 = IF
+."  es par "
+ELSE
+."  es impar "
+THEN
+a @ 1 - a !
+REPEAT
+;
+main

@@ -1,0 +1,8 @@
+(defun main()
+    (setq main_v (make-array 5))
+    (setq main_x 0)
+    (setf (aref main_v 0) 10)
+    (setf main_x (aref main_v 0))
+    (return-from main (+ (+ (aref main_v 0) (aref main_v 1)) (aref main_v 2)))
+)
+

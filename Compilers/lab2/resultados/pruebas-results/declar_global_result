@@ -1,0 +1,7 @@
+(setq x 5)
+(defun main()
+    (setq main_a 3)(setq main_b 4)
+    (setf main_a (+ main_a main_b))
+    (print "Hola mundo")
+)
+

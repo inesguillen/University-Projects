@@ -1,0 +1,39 @@
+variable primo
+0 primo !
+variable n
+0 n !
+variable m
+0 m !
+variable main_d
+variable main_i
+variable main_p
+: main
+0 main_d !
+0 main_i !
+0 main_p !
+1 main_i !
+1 n !
+100 m !
+1 main_i !
+BEGIN
+main_i @ m @ <= WHILE
+2 main_d !
+1 primo !
+BEGIN
+primo @ 1 = main_d @ main_i @ < and WHILE
+main_i @ main_d @ mod main_p !
+main_p @ 0 = IF
+0 primo !
+
+THEN
+main_d @ 1 + main_d !
+REPEAT
+primo @ 1 = IF
+main_i @ .
+."  "
+
+THEN
+main_i @ 1 + main_i !
+REPEAT
+;
+main
