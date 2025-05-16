@@ -1,9 +1,4 @@
 # Grupo 14
-Salvador Ayala Iglesias, 100495832
-
-Inés Fuai Guillén Peña, 100495752
-
-Paula Morales García, 100472240
 
 # Información relevante
 ## Videos 
